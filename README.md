@@ -1,4 +1,4 @@
-We are given the following grammar for generating arithmetic expressions.
+We are given the following grammar for generating arithmetic expressions. 
 G1:
 G -> E
 E -> E + T | E - T | T
