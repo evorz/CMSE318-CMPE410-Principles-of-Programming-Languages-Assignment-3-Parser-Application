@@ -1,6 +1,6 @@
 class Parser:
     def __init__(self, file_name):
-        self.file = open("Assaignment3 CMSE318\\CMSE318-CMPE410-Principles-of-Programming-Languages-Assignment-3-Parser-Application\\input.txt", 'r')
+        self.file = open(file_location, 'r')
         self.error = False
         self.next_token = ''
     
@@ -140,8 +140,9 @@ class Parser:
 
 def main():
     # Create a Parser instance and parse the input
-    parser = Parser('Assaignment3 CMSE318\\CMSE318-CMPE410-Principles-of-Programming-Languages-Assignment-3-Parser-Application\\input.txt')
+    parser = Parser(file_location)
     parser.G()
 
 if __name__ == '__main__':
+    file_location = input("Please enter a location of 'input.txt' : ")
     main()
