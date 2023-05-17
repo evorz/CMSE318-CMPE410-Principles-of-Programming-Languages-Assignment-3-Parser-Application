@@ -1,6 +1,6 @@
 class Parser:
     def __init__(self, file_name):
-        self.file = open("C:\\Users\\musta\\Desktop\\MyCodes\\Assaignment3 CMSE318\\input.txt", 'r')
+        self.file = open("Assaignment3 CMSE318\CMSE318-CMPE410-Principles-of-Programming-Languages-Assignment-3-Parser-Application\input.txt", 'r')
         self.error = False
         self.next_token = ''
     
@@ -115,7 +115,7 @@ class Parser:
             print(f"unconsumed input = {self.unconsumed_input()}")
 
 def main():
-    parser = Parser('C:\\Users\\musta\\Desktop\\MyCodes\\Assaignment3 CMSE318\\input.txt')
+    parser = Parser('Assaignment3 CMSE318\CMSE318-CMPE410-Principles-of-Programming-Languages-Assignment-3-Parser-Application\input.txt')
     parser.G()
 
 if __name__ == '__main__':
